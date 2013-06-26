@@ -1,3 +1,9 @@
+pam-ssh-agent-auth (0.9.5-1ubuntu1) precise; urgency=low
+
+  * Initial Ubuntu package
+
+ -- Chris Pick <chris@chrispick.com>  Wed, 26 Jun 2013 00:30:17 -0400
+
 pam-ssh-agent-auth (0.9.5-1) stable; urgency=low
   * Portability fixes for BSD/Mac 
 
