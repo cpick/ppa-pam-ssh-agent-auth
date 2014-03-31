@@ -65,8 +65,9 @@ pam_user_key_allowed2(struct passwd *pw, Key *key, char *file)
 
 	verbose("trying public key file %s", file);
 
-	/* Fail quietly if file does not exist */
+	/* Fail not so quietly if file does not exist */
 	if (stat(file, &st) < 0) {
+        verbose("File not found: %s", file);
 		return 0;
 	}
 	/* Open the file containing the authorized keys. */
@@ -115,10 +116,10 @@ pam_user_key_allowed2(struct passwd *pw, Key *key, char *file)
 		}
 		if (key_equal(found, key)) {
 			found_key = 1;
-			verbose("matching key found: file %s, line %lu",
+			logit("matching key found: file %s, line %lu",
 			    file, linenum);
 			fp = key_fingerprint(found, SSH_FP_MD5, SSH_FP_HEX);
-			verbose("Found matching %s key: %s",
+			logit("Found matching %s key: %s",
 			    key_type(found), fp);
 			xfree(fp);
 			break;

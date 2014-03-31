@@ -1,3 +1,5 @@
+The Debian Package pam-ssh-agent-auth
+----------------------------
 pam_ssh_agent_auth is a PAM module which permits PAM authentication via your
 keyring in a forwarded ssh-agent.
 
@@ -36,3 +38,5 @@ environment (even env_keep variables) prior to attempting PAM authentication.
 
 sudo 1.7.2p1 or later is preferred, as it correctly sets PAM_RUSER for
 authentication.
+
+ -- Jamie Beverly <soupboy@sourceforge.net>  Wed, 13 Jan 2010 01:08:49 +0300
