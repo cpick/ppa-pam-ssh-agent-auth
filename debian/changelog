@@ -1,4 +1,10 @@
-pam-ssh-agent-auth (0.10.1-1) stable; urgency=low
+pam-ssh-agent-auth (0.10.1-0ubuntu0ppa1) precise; urgency=low
+
+  * Pull version 0.10.1 from upstream
+
+ -- Chris Pick <chris@chrispick.com>  Mon, 31 Mar 2014 00:41:50 -0400
+
+pam-ssh-agent-auth (0.10.1-0) stable; urgency=low
   * support for authorized_keys_command and authorized_keys_command_user
 
  -- Jamie Beverly <soupboy@sourceforge.net> Thu, 9 Jan 2014 06:23:00 -0800
