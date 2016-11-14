@@ -1,3 +1,9 @@
+pam-ssh-agent-auth (0.10.3-0ubuntu0ppa1) xenial; urgency=low
+
+  * Pull version 0.10.3 from upstream
+
+ -- Chris Pick <chris@chrispick.com>  Mon, 14 Nov 2016 16:48:57 -0500
+
 pam-ssh-agent-auth (0.10.2-0ubuntu0ppa1) precise; urgency=low
 
   * Pull version 0.10.2 from upstream
